@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Embarrassed words Game</title>
+    <meta charset="UFT-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  </head>
+  <body>
+    <section id="set-words-container">
+         <h1>Write bellow the words you want to practice!</h1>
+      <div class="set-container">
+          <form id="myFstForm">
+            <div id="input-container">
+            <input type="text" placeholder="Type a word">
+            </div>
+            <div class="btns">
+            <button id="firstBtn" type="submit"><i class="bi bi-plus-square-fill"></i>Add word</button>
+            <button id="removeBtn" type="submit"><i class="bi bi-x-square-fill"></i>Remove word</button>
+            <button id="secondBtn">Submit</button>
+            </div
+           </form>
+      </div>
+      <div id="pAnswer"></div>
+    </section>
+    <section id="words-container">
+      <div class="letters-container">
+        <div class="letter"></div>
+      </div>
+        <button id="thirdBtn">Emberrasse the words</button>
+      <div id="input-answer">
+        <form id="mySndForm">
+          <input id="input" type="text" placeholder="Type the word correctly">
+          <button type="submit" id="fourthBtn">Submit</button>
+        </form>
+      </div>
+      <div id="pAnswer2"></div>
+    </section>
+    <footer id="footer">
+        <div class="footer">
+            <p><span class="span">© </span>Copyright - 2023 Arrenge Words Game | by Pedro Jacob<br>
+            All rights reserved</p>
+        </div>
+    </footer>
+    <script src="wordsGame.js"></script>
+  </body>
+</html>

@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: 'Inconsolata', monospace;
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+    background-color: rgb( 184, 184, 184, .7);
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: rgb(205, 137, 0);
+  border-radius: 30px;
+}
+
+#set-words-container {
+    width: 100%;
+    height: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: tomato;
+  padding: 5rem 100px;
+}
+
+#set-words-container h1 {
+  font-size: 26px;
+  margin: 0 0 20px;
+}
+
+#set-words-container .set-container form {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#set-words-container .set-container input {
+  padding: 10px;
+  background: #FF6347;
+  box-shadow: 2px 2px 3px #e0573e,
+             -2px -2px 3px #ff6f50;
+  outline: none;
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#set-words-container .set-container .btns {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+#set-words-container .set-container button {
+  cursor: pointer;
+  background-color: rgb(184, 184, 184, 0.3);
+  border: none;
+  box-shadow: 3px 3px;
+  padding: 4px 10px;
+  font-size: 20px;
+  margin: 10px 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#set-words-container .set-container button i {
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+#words-container {
+    width: 100%;
+    height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #e8a826;
+  padding: 100px;
+}
+
+
+.letters-container {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.letters-container .letter {
+  max-width: 5rem;
+  background-color: tomato;
+  padding: 10px;
+  font-size: 24px;
+  text-align: center;
+  margin: 10px;
+  box-shadow: 3px 3px 3px;
+  white-space: nowrap;
+}
+
+#thirdBtn {
+  cursor: pointer;
+  background-color: rgb(184, 184, 184, 0.3);
+  border: none;
+  box-shadow: 3px 3px;
+  margin: 10px 0 20px;
+  padding: 4px 10px;
+  font-size: 20px;
+}
+
+#input-answer form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#input-answer input {
+  padding: 10px;
+  background: #e8a826;
+  box-shadow:  2px 2px 3px #d89c23,
+             -2px -2px 3px #f8b429;
+  outline: none;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+#input-answer button {
+  cursor: pointer;
+  background-color: rgb(184, 184, 184, 0.3);
+  border: none;
+  box-shadow: 3px 3px;
+  margin: 10px 0 20px;
+  padding: 4px 10px;
+  font-size: 20px;
+}
+
+#pAnswer,
+#pAnswer2{
+  font-size: 20px;
+  margin: 20px 0 0;
+}
+
+#footer {
+    background-color: #e0573e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 3rem 0;
+}
+
+#footer .footer {
+    color: black;
+    font-size: small;
+    font-family: 'Inconsolata', monospace;
+    text-align: center;
+}
+
+#footer .footer .span{
+    color: black;
+    font-size: 18px;
+    font-family: 'Inconsolata', monospace;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 768px) {
+  #set-words-container {
+    padding: 20px;
+}
+
+    #set-words-container h1 {
+        text-align: center;
+    }
+
+    #set-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #input-container {
+      width: 50vh;
+      display: grid;
+      place-content: center;
+    }
+
+}
+
+@media screen and (max-width: 535px) {
+  #input-answer {
+    display: grid;
+    place-content: center;
+  }
+
+  #input-answer button {
+    margin: 0 4.5rem;
+}
+
+}
